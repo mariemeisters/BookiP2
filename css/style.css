@@ -15,13 +15,13 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-right: 30px;
-    max-width: 1400px;
+    height: 110px;
 }
 
 #logo {
     display: flex;
-    width: 130px;
-    padding: 30px 0 0 20px;
+    width: 120px;
+    padding: 30px 0 0 40px;
 }
 
 ul {
@@ -35,7 +35,7 @@ a {   /*concerne toutes les ancres*/
 }
 
 li a {   
-    padding: 30px; /*max 30 pour laisser apparaitre la bordure*/
+    padding: 40px 30px 30px 30px;
     font-size: 18px;
     font-weight: 400;
 }
@@ -48,8 +48,7 @@ li a:hover { /*selection li a pour ne pas interferer avec les autres puces a*/
             /* ------------- RECHERCHE ----------- */
              
 main {
-    margin: 0 30px 0 50px;
-    max-width: 1400px;
+    margin: 0 40px 0 50px;
 }
 
 .titreh1 {
@@ -227,18 +226,16 @@ button {
     justify-content: space-between;
     height: auto;
     margin-top: 30px;
-    max-width: 1400px;
 }
 
 
 #lespluspopulaires {   /*container de droite*/
     display: flex;
     flex-wrap: wrap;
-    width: 30%;
+    width: 32%;
     height: 600px;
     background-color: #e6e6e6;
-    border-radius: 20px;
-    margin-right: 30px;   
+    border-radius: 20px;  
 }
 
 #titresectionpop {    /*container titre et etoile*/
@@ -255,7 +252,7 @@ button {
 
 .etoilepop {
     font-size: 20px;
-    padding: 15px 30px 0 0;
+    padding: 16px 12% 0 0; /*placement de l'étoile pop*/
 }
 
 .locationspopulaires {
@@ -266,7 +263,7 @@ button {
 }
 
 .locationspopulaires article {
-    width: 85%;
+    width: 80%;
 }
 
 .cartepopulaire {   /*conteneur avec fond + padding*/
@@ -412,7 +409,6 @@ button {
 #bloc3activites {
     margin-top: 40px;
     margin-bottom: 70px;
-    max-width: 1400px;
 }
 
 .h2activites {
@@ -430,7 +426,6 @@ button {
     display: flex;
     justify-content: space-between;
     height: 450px;
-    margin-right: 30px;
 }
 
 .activitescolonne1, .activitescolonne2, .activitescolonne3, .activitescolonne4 {
@@ -644,17 +639,12 @@ footer {
         width: 100%;  /*permet d'élargir nav à header*/
         display: flex;
     }
-
-    #logo {
-        padding-left: 40px; /*^Pour bien recentrer le logo*/
-    }
     
     ul {
-        display: flex;
-        width: 100%; /*permets d'élargir activité sur tte la largeur*/
-        max-height: 70px; /*permet de diriger le texte vers la baseline*/
         padding: 0; /*reset padding*/
         margin: 0; /*reset margin*/
+        width: 100%; /*permets d'élargir activité sur tte la largeur*/
+        height: 70px; /*hauteur fixée permettant de diriger le texte vers la baseline*/
     }
 
     li {
@@ -675,10 +665,9 @@ footer {
                                 /*------ MAIN ------*/
 
     #bloc1{
-        margin: 20px 10px 0 20px;
+        margin: 60px 10px 0 20px;
     }
                          /*------Barre de recherche------*/
-
 
     .SearchBar {
         width: 220px;
@@ -703,6 +692,10 @@ footer {
     #bloc2 {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    #titresectionpop {
+        padding-left: 20px;
     }
 
     #lespluspopulaires {
@@ -733,7 +726,11 @@ footer {
     
     #hebergementmarseille {
         background-color: white;
-        width: 375px;
+        width: 100%;
+    }
+
+    .h2hebmarseille {
+        padding: 20px 0 5px 20px;
     }
 
     .locationMarseille article {
@@ -751,7 +748,7 @@ footer {
     }
 
     .afficherplus { 
-        padding: 10px 0 0 20px;
+        padding: 0 0 0 20px;
     }
 
             /*------ ACTIVITES MARSEILLE-----*/
@@ -795,6 +792,7 @@ footer {
 
     #containerfooter {
         display: block;
+        padding-left: 5%;
     }
 
     .apropos, .noshebergements, .assistance {
