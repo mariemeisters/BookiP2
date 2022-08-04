@@ -167,13 +167,11 @@ button {
     height: 46px;
     border-radius: 23px;
     background-color: #DEEBFF;
-    position: relative; /*Utilisée pour bouger de 2px l'icone*/
+    position: relative; 
     right: 6px;
 }
 
 .filtre {
-    color: black; /*désactive la couleur violette du lien*/
-    text-decoration: none;
     font-size: 17px;
     font-weight: 700;
     padding: 0 20px 0 5px;
@@ -198,14 +196,14 @@ button {
 
 .logementdispo i {
     display:flex;
-    align-items: center;
-    padding-left :9px;
+    height: 19px;
+    align-items: center;  
+    padding-left :10px;
     color:#0065FC;
 }
 
 #iconeinfo {
     display: flex;
-    width: 30px;
 }
 
 .cercleicone {
@@ -214,7 +212,7 @@ button {
     height: 20px;
     border-radius: 11px;
     position: relative;
-    right: 14px;
+    right: 13px;
 }
 
                 /*------ LES PLUS POPULAIRES------*/
@@ -415,10 +413,14 @@ button {
 }
 
 .h4activites {  /*50px de hauteur au total*/
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 800;
     margin: 0;
-    padding: 15px 0 16px 18px;
+    padding: 17px 0 17px 18px;
+    position: relative;
+    bottom: 50px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
 }
 
 #containeractivites {
@@ -427,8 +429,13 @@ button {
     height: 450px;
 }
 
-.activitescolonne1, .activitescolonne2, .activitescolonne3, .activitescolonne4 {
+.activite1, .activitescolonne2, .activite4, .activitescolonne4 {
     width: 23%;
+    min-width: 235px;
+}
+
+.activite2 { 
+    height: 280px;
 }
 
 .carte1, .carte2, .carte3, .carte4, .carte5, .carte6 {
@@ -438,12 +445,12 @@ button {
     box-shadow: 0px 0px 10px #e6e6e6;
 }
 
-.carte1:hover, .carte2:hover, .carte3:hover, .carte4:hover, .carte5:hover, .carte6:hover {
-    transform: scale(0.9);
+.colonne1:hover, .activite2:hover, .activite3:hover, .colonne3:hover, .activite5:hover, .activite6:hover {
+    transform: scale(1.03);
 }
 
 .imgcarte1, .imgcarte2, .imgcarte3, .imgcarte4, .imgcarte5, .imgcarte6 {
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 22px 22px;
 }
 
 .carte1, .carte4 {
@@ -451,52 +458,35 @@ button {
     object-fit: cover;
 }
 
-.imgcarte1, .imgcarte4 { /*50px en moins pour la bande blanche*/
+.imgcarte1, .imgcarte2, .imgcarte3, .imgcarte4, .imgcarte5, .imgcarte6 { 
     height: 100%;
-    object-fit: none;
+    object-fit: cover;
 }
 
 .carte2 {
-    height: 225px;          /*450 / 2 = 225 soir la moitier de la hauteur colonne*/
-    margin-bottom: 45px;     /*10% de 450 pour séparation*/
-}
-
-.imgcarte2 {
-    height: 175px;      /*225 - 50 px = 175*/
-    object-fit:cover;
+    height: 235px;
 }
 
 .carte3 {
-    height: 180px;   /*40% de la hauteur de la colonne*/
-}
-
-.imgcarte3 {
-    height: 130px;
-    object-fit: cover;
+    height: 170px;   /*40% de la hauteur de la colonne*/
 }
 
 .imgcarte4 {
     filter : brightness(130%); /*eclaircir l'image*/
 }
 
-.carte5 {
-    height: 190px;
-    margin-bottom: 45px;    
+.activite5 {
+    height: 235px;
 }
 
-.imgcarte5 {
-    height: 140px;
-    object-fit: cover;
+.carte5 {
+    height: 190px;
 }
 
 .carte6 {
     height: 215px;
 }
 
-.imgcarte6 {
-    height: 165px;
-    object-fit: cover;
-}
 
                 /*------ FOOTER ------*/
 
