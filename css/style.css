@@ -55,7 +55,7 @@ main {
 .titreh1 {
     display: flex;
     font-size: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #bloc1 {
@@ -69,9 +69,9 @@ main {
 
 .txtgris {  
     display: flex;
-    color:#888888;
-    font-size: 16px;
-    font-weight: 600;
+    color:#000000;
+    font-size: 15px;
+    font-weight: 500;
     margin: 0px; 
 }
 
@@ -79,8 +79,9 @@ main {
 
 #Search {    
     display: flex;
-    padding: 20px 0 15px 0;
+    padding: 30px 0 15px 0;
     min-width: 350px;
+    height: 50px;
 } 
                 
 .iconelocalisation {
@@ -89,14 +90,15 @@ main {
     align-items: center;
     border: 1px solid #e6e6e6;
     background-color: #e6e6e6 ;
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
 
 .SearchBar {
     width: 220px;
+    color: #000000;
     border: 1px solid #e6e6e6;
     padding-left: 20px;
     font-size: 18px;
@@ -104,6 +106,10 @@ main {
     border-right: none;
     border-left: none;
     outline: none; /*Enlève les bordures noires qui apparaissent lors de la sélection */
+}
+
+::placeholder {
+    color: #000000;
 }
 
 button {  
@@ -119,14 +125,14 @@ button {
 }
 
 .loupe {  /*Désactivé en desktop*/
-    width: 48px;
+    width: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #0065FC;
     color: white;
-    border-radius: 12px;
+    border-radius: 14px;
     position: relative;
     right: 10px;    
 }
@@ -137,7 +143,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    font-size: 17px;
+    font-size: 18px;
     padding-top: 15px;
 }
 
@@ -145,17 +151,14 @@ button {
     display: flex;
     align-items: center;
     border: 2px solid #e6e6e6; /*gris maquette*/
-    border-radius: 20px;
-    height: 40px;
-    margin-right: 35px;
-    margin-bottom: 5px; /*pour espace lors de la réduction d'écran*/
-    margin-top:5px; /*pour espace lors de la réduction d'écran*/
+    border-radius: 22px;
+    height: 42px;
+    margin: 5px 35px 5px 0px ;
 }
 
-#txtfiltres {   /* ID pour être + fort que .txtfiltres et enlever la bordure*/
-    border: none;
+#txtfiltres { 
     font-size: 15px;
-    padding-right: 30px;
+    padding: 0 40px 0 10px;
 }
 
 #blocfiltres i {  /*cercle uniquement aux puce i de blocfiltres*/
@@ -184,35 +187,28 @@ button {
 
 .filtre:hover{
     color: #0065FC;
-    transform: scale(1.1)   
+    transform: scale(1.05)   
 }
 
                 /*----- LOGEMENTS DISPONIBLES DANS LA VILLE -----*/
 
 .logementdispo {
-    display: flex;
-    padding: 35px 0 10px 0;
-}
-
-.logementdispo i {
     display:flex;
-    height: 19px;
     align-items: center;  
-    padding-left :10px;
+    padding: 35px 0 10px 15px;
     color:#0065FC;
 }
 
-#iconeinfo {
-    display: flex;
+.logementdispo i {
+    position: relative;
+    left: 7px;
 }
 
 .cercleicone {
     border: 1px solid #e6e6e6;
-    width: 20px;
-    height: 20px;
+    min-width: 20px;
     border-radius: 11px;
-    position: relative;
-    right: 13px;
+    margin-right: 10px;
 }
 
                 /*------ LES PLUS POPULAIRES------*/
@@ -235,22 +231,18 @@ button {
     border-radius: 20px;  
 }
 
-#titresectionpop {    /*container titre et etoile*/
-    width: 100%;
-    height: 20px;
+#titresectionpop {
     display: flex;
-    justify-content: space-between; 
-    padding: 25px 0 30px 30px;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding: 20px 0 0 35px;
 }
 
 .h2sectionpop {
     font-size: 20px;
 }
 
-.etoilepop {
-    font-size: 20px;
-    padding: 16px 12% 0 0; /*placement de l'étoile pop*/
-}
 
 .locationspopulaires {
     display: flex;
@@ -312,7 +304,7 @@ button {
 
 .h2hebmarseille {
     font-size: 20px;
-    padding: 25px 0 15px 30px;
+    padding: 25px 0 15px 35px;
 }
 
 .prixbas {          /*prix bas en gras*/
@@ -410,13 +402,14 @@ button {
 
 .h2activites {
     font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .h4activites {  /*50px de hauteur au total*/
     font-size: 14px;
     font-weight: 800;
     margin: 0;
-    padding: 17px 0 17px 18px;
+    padding: 18px 0 18px 18px;
     position: relative;
     bottom: 50px;
     background-color: white;
@@ -429,38 +422,38 @@ button {
     height: 450px;
 }
 
+.carte1, .carte2, .carte3, .carte4, .carte5, .carte6 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 15px rgba(31, 31, 31, 0.466);
+}
+
 .activite1, .activitescolonne2, .activite4, .activitescolonne4 {
     width: 23%;
     min-width: 235px;
 }
 
-.activite2 { 
-    height: 280px;
-}
-
-.carte1, .carte2, .carte3, .carte4, .carte5, .carte6 {
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 10px #e6e6e6;
-}
-
-.colonne1:hover, .activite2:hover, .activite3:hover, .colonne3:hover, .activite5:hover, .activite6:hover {
-    transform: scale(1.03);
+.activite1:hover, .activite2:hover, .activite3:hover, .activite4:hover, .activite5:hover, .activite6:hover {
+    transform: scale(1.08);
 }
 
 .imgcarte1, .imgcarte2, .imgcarte3, .imgcarte4, .imgcarte5, .imgcarte6 {
     border-radius: 20px 20px 22px 22px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .carte1, .carte4 {
     height: 450px;
     object-fit: cover;
 }
+.imgcarte4 {
+    filter: brightness(120%); 
+}
 
-.imgcarte1, .imgcarte2, .imgcarte3, .imgcarte4, .imgcarte5, .imgcarte6 { 
-    height: 100%;
-    object-fit: cover;
+.activite2 { 
+    height: 280px;
 }
 
 .carte2 {
@@ -468,11 +461,7 @@ button {
 }
 
 .carte3 {
-    height: 170px;   /*40% de la hauteur de la colonne*/
-}
-
-.imgcarte4 {
-    filter : brightness(130%); /*eclaircir l'image*/
+    height: 170px; 
 }
 
 .activite5 {
@@ -533,12 +522,20 @@ footer {
         margin: 0;
     }
 
+    #logo {
+        padding: 30px 0 0 0px;
+    }
+
     #bloc1{
         margin-left: 20px;
     }
 
     .loupe {
         display:none;
+    }
+
+    #blocfiltres {
+        flex-wrap: nowrap;
     }
     
                             /*HEBERGEMENTS*/
@@ -551,21 +548,19 @@ footer {
     #hebergementmarseille {
         width: 100%;
         border-radius: 0;
+        margin-top: 20px;
     }
 
     #lespluspopulaires {
         margin: 0;
         width: 70%;
-        height: auto;
+        justify-content: center;
         background-color: white;
     }
     
     #titresectionpop {
-        margin: 0 0 30px 30px;
-    }
-
-    .etoilepop {
-        padding: 16px 50% 0 0;
+        padding: 20px 0 20px 0;
+        width: 40%;
     }
 
     .afficherplus {
@@ -575,7 +570,9 @@ footer {
                          /*-------ACTIVITES-------*/
 
     #bloc3activites {
+        display: flex;
         margin-bottom: 30px;
+        flex-direction: column;
     }
 
     .h2activites {
@@ -584,23 +581,19 @@ footer {
         padding-bottom: 30px;
     }
 
-    .activitescolonne3, .activitescolonne4 {
-        padding: 50px 0 30px 0;
+    #containeractivites {
+        flex-wrap: wrap;
+      
+        align-self: center;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    .activite1, .activitescolonne2, .activite4, .activitescolonne4 {
+        width: 35%;
+        min-width: 235px;
     }
     
-    .activitescolonne1, .activitescolonne2, .activitescolonne3, .activitescolonne4 {
-        min-width: 350px;
-    }
-
-    #containeractivites {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        height: auto;
-        width: 100%;
-        margin: 0;
-    }
-
     #containerfooter {
         display: flex;
         width: 80%;
@@ -621,7 +614,12 @@ footer {
                         
     header { /* centre header sur mobile */
         width: 100%;
+        padding-top: 10px;
         justify-content: center; /*centre le logo*/
+    }
+
+    #logo  {
+        padding: 10px 0 0 50px;
     }
 
     nav {
@@ -645,6 +643,7 @@ footer {
 
     li a {
         width: 100%; /*permets d'élargir le trait sur tte la largeur*/
+        padding-top: 35px;
         border-bottom: 3px solid #e6e6e6;
     } 
     
@@ -655,7 +654,7 @@ footer {
                                 /*------ MAIN ------*/
 
     #bloc1{
-        margin: 60px 10px 0 20px;
+        margin: 40px 10px 0 20px;
     }
                          /*------Barre de recherche------*/
 
@@ -669,14 +668,23 @@ footer {
 
                         /*------FILTRES------*/
 
+    #txtfiltres { 
+        height: 45px;
+        padding: 0;
+    }
+
     .economique, .familial, .romantique, .animaux {
         margin-right: 10px;
     }
-    
-    #iconeinfo {
-        display: flex;
-        align-self: flex-start; 
+
+    .logementdispo {
+        padding: 35px 0 10px 0;
     }
+    .cercleicone {
+        position: relative;
+        bottom: 10px;    
+    }
+   
             /*------ HEBERGEMENTS LES PLUS POPULAIRES-----*/
 
     #bloc2 {
@@ -692,6 +700,11 @@ footer {
         border-radius: 0;
         margin: 0;
         width: 100%;
+    }
+
+    #titresectionpop {
+        padding: 10px 0 0 35px;
+        width: 85%;
     }
 
     .locationspopulaires {
@@ -743,40 +756,27 @@ footer {
 
             /*------ ACTIVITES MARSEILLE-----*/
 
+
     #containeractivites {
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         height: auto;
         width: 100%;
-        justify-content: center;
+        align-content: center;
     }
 
-    .h2activites {
-        padding-left: 20px;
-    }
-
-    .activitescolonne1, .activitescolonne2, .activitescolonne3, .activitescolonne4 {
-        padding-bottom: 25px;
-        width: 100%;
-    }
-
-    .activitescolonne1 article, .activitescolonne2 article, .activitescolonne3 article, .activitescolonne4 article {
-        display: flex;
-        justify-content: center;
-    }
-
-    .carte1, .carte2, .carte3, .carte4, .carte5, .carte6 {
-        height: 180px;
+    .activite1, .activitescolonne2, .activite4, .activitescolonne4 {
         width: 90%;
     }
 
-    .imgcarte1, .imgcarte2, .imgcarte3, .imgcarte4, .imgcarte5, .imgcarte6 {
-        height: 130px;
+    .activite1, .activite2, .activite3, .activite4, .activite5, .activite6 {
+        height: 210px;
     }
-
-    .carte2, .carte5 {
-        margin-bottom: 25px;  /*annule l'écart trop grand dû aux marges desktop*/
+    
+    .carte1, .carte2, .carte3, .carte4, .carte5, .carte6 {
+        height: 180px;
+    }
+    .h2activites {
+        padding-left: 20px;
     }
 
     #containerfooter {
@@ -785,6 +785,7 @@ footer {
         padding-left: 5%;
     }
 
+   
     .apropos, .noshebergements, .assistance {
         padding-right: 0;
     }
