@@ -4,28 +4,25 @@
     <head>
         <meta charset="utf-8">
         <title> Booki </title>
-        <meta name=viewport content="width=device-width, initial-scale=1">
+        <meta name=viewport content="width=device-width, initial-scale=1"> <!--contrôle la mise en page sur mobile-->
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/fontawesome-free-6.1.1-web/css/all.min.css"/>
     </head>
 
     <body>
         
-        <!-- Header-->
         <header>
             <img id=logo src="images/logo/Booki.png" alt="Logo">
             <nav>
                 <ul>
-                    <li><a href="#hebergementmarseille">Hébergements</a></li> <!-- ancrage à faire-->
+                    <li><a href="#hebergementmarseille">Hébergements</a></li> 
                     <li><a href="#bloc3activites">Activités</a></li>
                 </ul>
             </nav>
         </header>
 
-        <!-- Contenu principal de la page-->
         <main>
             <!-- Section 1 - Trouver votre hébergement de rêve-->
-            
             <section id="bloc1">
                 
                 <div class="textebloc1">
@@ -38,12 +35,10 @@
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                     <input type="text" class="SearchBar" placeholder="Marseille, France">
-                    <button type="submit" name="SearchButton" >Rechercher</button> 
+                    <button type="submit" name="SearchButton" >Rechercher</button> <!--submit = soumet les données de formulaire-->
                     <div class="loupe"><i class="fa-solid fa-magnifying-glass"></i></div>
                 </form>
-
                                 <!-- Filtres-->
-
                 <div id="blocfiltres">
             
                     <div id="txtfiltres">
@@ -51,7 +46,6 @@
                     </div>
         
                     <div id="allfiltre">
-
                         <div class="economique">
                             <i class="fa-solid fa-money-bill-wave fa"></i>
                             <a class="filtre" href="#">Économique</a>
@@ -73,22 +67,18 @@
                         </div>
                     </div>
                 </div>
-
                
                 <div class="logementdispo">
                     <div class="cercleicone">
-                        <i class="fa-solid fa-info fa-sm"></i> <!--fa-xs pour la taille d'icone et div pour le cercle-->
+                        <i class="fa-solid fa-info fa-sm"></i> <!--fa-sm pour la taille d'icone et div pour le cercle-->
                     </div>
                     <p class="txtgris">Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
-
-
-            <!--les plus populaires et hébergement à Marseille  -->
-
+                                <!--les plus populaires et hébergement à Marseille  -->
             <section id="bloc2">
                 
-                <div id="lespluspopulaires">  <!--bloc à droite-->
+                <div id="lespluspopulaires"> 
   
                     <div id="titresectionpop">
                         <h2 class="h2sectionpop">Les plus populaires</h2>
@@ -332,12 +322,12 @@
                                 <h4 class="h4activites">Parc Longchamp</h4>
                             </a>
                         </articLe>
+
                     </div>
                 </div>  
             </section>
         </main>
         
-        <!-- Footer-->
         <footer>
             <div id="containerfooter">
                 <div class="apropos">
@@ -359,16 +349,8 @@
                     <a href="#" class="txtfooter">Nous contacter</a>
                 </div>
             </div>
-
-
-
         </footer>
-
-       
-        
-
     </body>
-    
 </html>
 
 
