@@ -72,9 +72,7 @@ main {
     font-weight: 500;
     margin: 0px; 
 }
-
                     /*----- Barre de recherche -----*/
-
 #Search {    
     display: flex;
     padding: 30px 0 15px 0;
@@ -142,13 +140,17 @@ button {
     padding-top: 15px;
 }
 
-.economique, .familial, .romantique, .animaux {
+#economique, #familial, #romantique, #animaux {
     display: flex;
     align-items: center;
     border: 2px solid #e6e6e6; /*gris maquette*/
     border-radius: 22px;
     height: 42px;
     margin: 5px 35px 5px 0px ;
+}
+
+#economique:hover, #familial:hover, #romantique:hover, #animaux:hover {
+    color: #0065FC;
 }
 
 #txtfiltres { 
@@ -180,10 +182,6 @@ button {
     flex-wrap: wrap;
 }
 
-.filtre:hover{
-    color: #0065FC;
-    transform: scale(1.05)   
-}
                      /*----- LOGEMENTS DISPONIBLES DANS LA VILLE -----*/
 .logementdispo {
     display:flex;
@@ -425,37 +423,37 @@ button {
     object-fit: cover;
 }
 
-.carte1, .carte4 {
-    height: 450px;
-    object-fit: cover;
-}
 .imgcarte4 {
     filter: brightness(120%); 
 }
 
-.activite2 { /*gestion hauteur de l'article pour empêcher le dépacement bottom*/
-    height: 280px;
+.carte1, .carte4 {
+    height: 450px;
+    object-fit: cover;
 }
 
-.activite5 {  /*gestion hauteur de l'article pour empêcher le dépacement bottom*/
+.carte2, .carte3, .carte5, .carte6 { 
+    height: 100%;
+}
+
+.activite2 { /*235 px (activite2 + 165 px (activite3) + 50 (marge)= 450 (hauteur container)*/
     height: 235px;
+    margin-bottom: 50px;
 }
 
-.carte2 {  /* carte 2 + carte 3 = 405px soit 10% (45) de séparation entre les deux*/
-    height: 235px;
+.activite3 {
+    height: 165px;
 }
 
-.carte3 {
-    height: 170px; 
+.activite5 {  /*195 px (activite5 + 205px (activite6) + 50 (marge) = 450 (hauteur container)*/
+    height: 195px;
+    margin-bottom: 50px;
 }
 
-.carte5 { /* carte 5 + carte 6 = 405px soit 10% (45) de séparation entre les deux*/
-    height: 190px;
+.activite6 {
+    height: 205px ;
 }
 
-.carte6 {
-    height: 215px;
-}
                 /*------ FOOTER ------*/
 footer {
     background-color:#e6e6e6;
@@ -646,7 +644,7 @@ footer {
         padding: 0;
     }
 
-    .economique, .familial, .romantique, .animaux {
+    #economique, #familial, #romantique, #animaux {
         margin-right: 10px;
     }
 
@@ -748,6 +746,7 @@ footer {
 
     .activite1, .activite2, .activite3, .activite4, .activite5, .activite6 {
         height: 220px;
+        margin: 0; /*supprime la marge des article 2 et 5*/
     }
     
     .carte1, .carte2, .carte3, .carte4, .carte5, .carte6 {
