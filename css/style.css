@@ -411,7 +411,7 @@ button {
 
 .activite1, .activitescolonne2, .activite4, .activitescolonne4 {
     width: 23%;
-    min-width: 235px;
+    min-width: 245px; /*Permet d'éviter l'allongement de l'act.Calanques*/
 }
 
 .activite1:hover, .activite2:hover, .activite3:hover, .activite4:hover, .activite5:hover, .activite6:hover {
@@ -768,7 +768,7 @@ footer {
         padding-left: 5%;
         height: 480px;
     }
-    
+
     .apropos, .noshebergements, .assistance {
         padding: 10px 0 0 0;
     }
