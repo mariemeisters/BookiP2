@@ -615,7 +615,7 @@ footer {
     li a {
         width: 100%; /*permets d'élargir le trait sur tte la largeur*/
         padding-top: 35px;
-        border-bottom: 3px solid #e6e6e6;
+        border-bottom: 3px solid #F2F2F2;
     } 
     
     li a:hover { /*barre bleue en bas dans nav*/
@@ -766,9 +766,10 @@ footer {
         display: block;
         height: auto;
         padding-left: 5%;
+        height: 480px;
     }
-
+    
     .apropos, .noshebergements, .assistance {
-        padding-right: 0;
+        padding: 10px 0 0 0;
     }
 }
