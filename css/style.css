@@ -193,6 +193,7 @@ button {
 .logementdispo i {
     position: relative;
     left: 7px;
+    bottom: 1px;
 }
 
 .cercleicone {
@@ -215,7 +216,7 @@ button {
     flex-wrap: wrap;
     width: 32%;
     height: 600px;
-    background-color: #e6e6e6;
+    background-color: #F2F2F2;
     border-radius: 20px;  
 }
 
@@ -298,7 +299,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #e6e6e6;
+    background-color: #F2F2F2;
     border-radius: 20px;
     width: 65%;
 }
@@ -456,7 +457,7 @@ button {
 
                 /*------ FOOTER ------*/
 footer {
-    background-color:#e6e6e6;
+    background-color:#F2F2F2;
 }
 
 #containerfooter {
