@@ -233,6 +233,10 @@ button {
     font-size: 22px;
 }
 
+#titresectionpop i{
+    font-size: larger;
+}
+
 .locationspopulaires {
     display: flex;
     flex-wrap: wrap;
@@ -674,7 +678,6 @@ footer {
         margin: 0;
         width: 100%;
         justify-content: center;
-        height: 550px;
     }
 
     #titresectionpop {
@@ -689,17 +692,16 @@ footer {
     }
     
     .locationspopulaires article { /*permet de réduire l'espace entre les cartes*/
-        height: 140px;
+        height: 160px;
         width: 90%;
     }
 
     .cartepopulaire, .imglocationspopulaires {
-        height: 120px;
+        height: 145px;
     }
 
     .imglocationspopulaires {
-        min-width:  130px; /*permets de fixer la largeur car 3 img moins large*/
-        max-width: 130px; /*permets de fixer la largeur*/
+        width: 130px;
     }
 
     .infocartepop {
