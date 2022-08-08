@@ -102,6 +102,7 @@ main {
 
 ::placeholder {
     color: #000000;
+    opacity: 1; /* regle le prob de Firefox qui ajoute un opacité plus bas au placeholder*/
 }
 
 button {  /*Button recherche*/
