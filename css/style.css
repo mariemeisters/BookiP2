@@ -484,7 +484,7 @@ footer {
                                         /* --- RESPONSIVE --- */
               
  
-@media screen and (min-width: 1500px) { /*s'adapte aux plus grands écrans*/
+@media screen and (min-width: 1440px) { /*s'adapte aux plus grands écrans*/
     body {
         align-content: center;
         margin: auto;
