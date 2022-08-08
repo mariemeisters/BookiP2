@@ -61,10 +61,6 @@ main {
     flex-direction: column;
 } 
 
-.textebloc1 {
-    flex-direction: column;
-}
-
 .txtgris {  
     display: flex;
     color:#000000;
@@ -108,8 +104,7 @@ main {
     color: #000000;
 }
 
-button {  
-    border: 1px solid #F2F2F2;
+button {  /*Button recherche*/
     width: 130px;
     border: none;
     font-size: 16px;
@@ -489,6 +484,13 @@ footer {
                                         /* --- RESPONSIVE --- */
               
  
+@media screen and (min-width: 1500px) { /*s'adapte aux plus grands écrans*/
+    body {
+        align-content: center;
+        margin: auto;
+    }
+} 
+                             
 @media screen and (min-width: 992px) {      /*desktop*/
 
     .loupe {
