@@ -72,7 +72,6 @@ main {
 #Search {    
     display: flex;
     padding: 30px 0 15px 0;
-    min-width: 350px;
     height: 50px;
 } 
                 
@@ -82,15 +81,15 @@ main {
     align-items: center;
     border: 1px solid #F2F2F2;
     background-color: #F2F2F2;
-    width: 48px;
-    height: 48px;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
+    padding: 18px; 
 }
 
 .SearchBar {
-    width: 220px;
     color: #000000;
+    max-width: 200px;
+    min-width: 100px;
     border: 1px solid #F2F2F2;
     padding-left: 20px;
     font-size: 18px;
@@ -117,7 +116,6 @@ button {  /*Button recherche*/
 }
 
 .loupe {  /*Désactivé en desktop*/
-    width: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,14 +124,15 @@ button {  /*Button recherche*/
     color: white;
     border-radius: 14px;
     position: relative;
-    right: 10px;    
+    right: 10px;
+    padding: 18px; 
 }
                          /*----- Filtres -----*/
 #blocfiltres {
     display: flex;
     align-items: center;
     font-size: 18px;
-    padding-top: 15px;
+    padding-top: 20px;
 }
 
 #economique, #familial, #romantique, #animaux {
@@ -389,29 +388,30 @@ button {  /*Button recherche*/
     font-size: 16px;
     font-weight: 800;
     margin: 0;
-    padding: 16px 0 16px 18px;
+    padding: 16px 0 16px 15px;
     position: relative;
     bottom: 50px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 15px rgb(201, 201, 201);
 }
 
 #containeractivites {
     display: flex;
     justify-content: space-between;
     height: 450px;
+    
 }
 
 .carte1, .carte2, .carte3, .carte4, .carte5, .carte6 {
     display: flex;
     flex-direction: column;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 15px rgb(180, 180, 180);
+    box-shadow: 0px 0px 15px rgb(201, 201, 201);
 }
 
 .activite1, .activitescolonne2, .activite4, .activitescolonne4 {
     width: 23%;
-    min-width: 245px; /*Permet d'éviter l'allongement de l'act.Calanques*/
 }
 
 .activite1:hover, .activite2:hover, .activite3:hover, .activite4:hover, .activite5:hover, .activite6:hover {
@@ -422,6 +422,7 @@ button {  /*Button recherche*/
     border-radius: 20px 20px 22px 22px;
     height: 100%;
     object-fit: cover;
+    
 }
 
 .imgcarte4 {
@@ -634,10 +635,7 @@ footer {
         margin: 40px 10px 0 20px;
     }
                                     /*------Barre de recherche------*/
-    .SearchBar {
-        width: 220px;
-    }
-
+   
     button {                        /* Désactivation de recherche*/
         display: none;
     }
