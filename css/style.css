@@ -393,7 +393,7 @@ button {  /*Button recherche*/
     bottom: 50px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
-    box-shadow: 0px 0px 15px rgb(201, 201, 201);
+    box-shadow: 0px 0px 15px rgb(216, 216, 216);
 }
 
 #containeractivites {
@@ -407,7 +407,7 @@ button {  /*Button recherche*/
     display: flex;
     flex-direction: column;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: 0px 0px 15px rgb(201, 201, 201);
+    box-shadow: 0px 0px 15px rgb(216, 216, 216);
 }
 
 .activite1, .activitescolonne2, .activite4, .activitescolonne4 {
@@ -678,6 +678,7 @@ footer {
         border-radius: 0;
         margin: 0;
         width: 100%;
+        min-width: none;
         justify-content: center;
     }
 
@@ -702,7 +703,7 @@ footer {
     }
 
     .imglocationspopulaires {
-        width: 130px;
+        width: 40%;
     }
 
     .infocartepop {
